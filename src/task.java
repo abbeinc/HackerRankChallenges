@@ -9,6 +9,10 @@ public class task {
     public static int[] arrA=new int[4];
     public static int cent5, cent1, cent10, cent25;
     public static int[] calculate(int x) {
+        if(x>99){
+           x=x%100;
+
+
         exchange=100-x;
 
         cent25=exchange/25;
@@ -21,7 +25,7 @@ public class task {
         arrA[0]=cent25;
         arrA[1]=cent10;
         arrA[2]=cent5;
-        arrA[3]=cent1;
+        arrA[3]=cent1;}
         return  arrA;
 }
 
@@ -29,7 +33,7 @@ public class task {
     public static void main(String[] args) {
 
         Scanner scn = new Scanner(System.in);
-        int x = 56;
+        int x = 106876826;
         int [] exch =calculate(x);
         System.out.println(Arrays.toString(exch));
 
